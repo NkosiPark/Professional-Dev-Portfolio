@@ -1,8 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
-  <rect width="100%" height="100%" fill="#111827"/>
-  <rect x="40" y="40" width="720" height="420" rx="16" fill="#0b1220" opacity="0.95"/>
-  <g fill="#FDE68A" font-family="Inter, Arial, sans-serif" font-size="36" text-anchor="middle">
-    <text x="400" y="260">Crypto Tracker</text>
-    <text x="400" y="305" font-size="20">Market Demo</text>
+  <rect width="100%" height="100%" rx="12" fill="#071022"/>
+  <g transform="translate(60,48)">
+    <rect width="680" height="404" rx="12" fill="#081728"/>
+
+    <!-- Candlestick chart -->
+    <g transform="translate(30,40)" stroke="#9ae6b4" stroke-width="3">
+      <line x1="10" y1="120" x2="10" y2="60"/>
+      <rect x="-6" y="60" width="32" height="40" fill="#34d399"/>
+      <line x1="70" y1="110" x2="70" y2="70"/>
+      <rect x="58" y="70" width="24" height="20" fill="#f97316"/>
+      <line x1="130" y1="100" x2="130" y2="50"/>
+      <rect x="118" y="50" width="24" height="24" fill="#34d399"/>
+      <line x1="190" y1="90" x2="190" y2="40"/>
+      <rect x="178" y="40" width="24" height="40" fill="#f97316"/>
+    </g>
+
+    <!-- Coin icon -->
+    <g transform="translate(480,120) scale(1.6)">
+      <circle cx="32" cy="32" r="32" fill="#fbbf24"/>
+      <text x="32" y="40" font-family="Inter, Arial, sans-serif" font-size="28" text-anchor="middle" fill="#071022">₿</text>
+    </g>
+
+    <text x="30" y="376" font-family="Inter, Arial, sans-serif" font-size="24" fill="#bff2d8">Cryptocurrency Tracker — Market Analytics</text>
   </g>
 </svg>

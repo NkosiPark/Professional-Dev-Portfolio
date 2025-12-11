@@ -1,8 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
-  <rect width="100%" height="100%" fill="#064E3B"/>
-  <rect x="40" y="40" width="720" height="420" rx="16" fill="#065F46" opacity="0.9"/>
-  <g fill="#D1FAE5" font-family="Inter, Arial, sans-serif" font-size="36" text-anchor="middle">
-    <text x="400" y="260">E‑Commerce</text>
-    <text x="400" y="305" font-size="20">Platform Demo</text>
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#06b6d4"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="#0b1220"/>
+  <rect x="48" y="48" width="704" height="404" rx="12" fill="url(#g1)" opacity="0.08"/>
+  <g transform="translate(110,70)">
+    <rect x="0" y="180" width="220" height="180" rx="12" fill="#0ea5a4" opacity="0.12"/>
+    <rect x="260" y="140" width="340" height="220" rx="12" fill="#7c3aed" opacity="0.12"/>
+
+    <!-- Shopping cart icon -->
+    <g transform="translate(20,30) scale(1.6)">
+      <rect x="6" y="14" width="32" height="18" rx="3" fill="#fff" opacity="0.92"/>
+      <path d="M6 14 L2 6 H0" stroke="#fff" stroke-width="2" fill="none"/>
+      <circle cx="14" cy="36" r="4" fill="#fff"/>
+      <circle cx="30" cy="36" r="4" fill="#fff"/>
+    </g>
+
+    <!-- Product tiles -->
+    <g transform="translate(260,150)">
+      <rect width="84" height="84" rx="8" fill="#fff" opacity="0.95"/>
+      <rect x="98" width="84" height="84" rx="8" fill="#fff" opacity="0.95"/>
+      <rect x="196" width="84" height="84" rx="8" fill="#fff" opacity="0.95"/>
+    </g>
+
+    <text x="0" y="360" font-family="Inter, Arial, sans-serif" font-size="28" fill="#e6f7ff">E‑Commerce Platform</text>
   </g>
 </svg>

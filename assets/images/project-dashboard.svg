@@ -1,8 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
-  <rect width="100%" height="100%" fill="#0f172a"/>
-  <rect x="40" y="40" width="720" height="420" rx="16" fill="#111827" opacity="0.95"/>
-  <g fill="#60A5FA" font-family="Inter, Arial, sans-serif" font-size="36" text-anchor="middle">
-    <text x="400" y="260">Security Dashboard</text>
-    <text x="400" y="305" font-size="20">Analytics Demo</text>
+  <rect width="100%" height="100%" rx="12" fill="#071029"/>
+  <g transform="translate(60,48)">
+    <!-- Card background -->
+    <rect width="680" height="404" rx="12" fill="#08263b"/>
+
+    <!-- Metrics -->
+    <g fill="#9be7ff">
+      <rect x="28" y="28" width="180" height="84" rx="8" fill="#052a3a"/>
+      <rect x="228" y="28" width="180" height="84" rx="8" fill="#053b4a"/>
+      <rect x="428" y="28" width="220" height="84" rx="8" fill="#06495a"/>
+    </g>
+
+    <!-- Line chart -->
+    <g transform="translate(28,140)">
+      <polyline points="0,90 60,50 120,70 180,30 240,60 300,20 360,40" fill="none" stroke="#60a5fa" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="0" y="110" width="360" height="12" rx="6" fill="#083242"/>
+    </g>
+
+    <!-- Shield icon -->
+    <g transform="translate(520,160) scale(1.2)" fill="#9be7ff">
+      <path d="M40 0 L80 16 V40 C80 66 64 98 40 120 C16 98 0 66 0 40 V16 Z" opacity="0.95"/>
+      <path d="M24 48 L34 60 L56 36" stroke="#071029" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <text x="28" y="376" font-family="Inter, Arial, sans-serif" font-size="24" fill="#cceeff">Security Dashboard — Analytics & Monitoring</text>
   </g>
 </svg>
