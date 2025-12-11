@@ -1,0 +1,15 @@
+{
+  "name": "professional-dev-portfolio",
+  "version": "1.0.0",
+  "description": "A modern, professional portfolio website for Nkosipendule Pakamile - Full Stack Developer & System Administrator.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^24.32.1"
+  }
+}
