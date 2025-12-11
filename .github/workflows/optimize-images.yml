@@ -1,0 +1,34 @@
+name: Optimize images
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  optimize:
+    name: Optimize images
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install imagemin CLI
+        run: npm install -g imagemin-cli imagemin-mozjpeg imagemin-pngquant
+
+      - name: Optimize images
+        run: |
+          npx imagemin "assets/images/*.{png,jpg,jpeg}" --out-dir=assets/images/
+
+      - name: Commit optimized images
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: 'chore: optimize images via CI'
+          add: 'assets/images/*'
+          default_author: 'github_actions <actions@github.com>'
